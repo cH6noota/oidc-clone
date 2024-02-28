@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0 #これがない場合、checkout時にエラーが出る。
       - name: Configure AWS
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::969393671445:role/github-OIDC-Role
           role-session-name: testuserclone
